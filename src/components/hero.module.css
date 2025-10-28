@@ -1,0 +1,48 @@
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background: linear-gradient(135deg, #748eff 0%, #89fbff 30%, #7e48b4 100%);
+    animation: gradientBG 10s ease infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.6s ease;
+}
+.logo:hover {
+    transform: translateY(-12px);
+}
+img {
+    width: 100%;
+}
+
+.tag {
+    text-align: center;
+
+}
+
+.Keys {
+    display: flex;
+    justify-content: center;
+}
