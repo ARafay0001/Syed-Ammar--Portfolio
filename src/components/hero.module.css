@@ -7,9 +7,19 @@
     width: 100%;
     height: 100vh;
     color: white;
-    background: linear-gradient(135deg, #748eff 0%, #89fbff 30%, #7e48b4 100%);
+    background: linear-gradient(135deg, #4b63d1 0%, #60e2ff 30%, #662d91 100%);
+    text-align: center;
     animation: gradientBG 10s ease infinite;
     background-size: 400% 400%;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 16px;
 }
 
 @keyframes gradientBG {
@@ -29,20 +39,50 @@
     border-radius: 50%;
     overflow: hidden;
     transition: transform 0.6s ease;
+    
+}
+
+img {
+
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    display: block;
 }
 .logo:hover {
     transform: translateY(-12px);
 }
-img {
-    width: 100%;
-}
-
 .tag {
     text-align: center;
 
 }
 
-.Keys {
+.keys {
     display: flex;
     justify-content: center;
+    gap: 12px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.triangle {
+    margin-top: 32px;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-7px);
+    }
+}
+
+.triangle a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    text-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 }

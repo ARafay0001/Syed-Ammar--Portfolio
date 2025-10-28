@@ -4,17 +4,22 @@ import Styles from "./hero.module.css";
 const Hero = (props) => {
   return (
     <div className={Styles.hero}>
-      <div className={Styles.logo}>
-        <img src={props.Logo} alt="Hero Image" />
-      </div>
+      <div className={Styles.container}>
+        <div className={Styles.logo}>
+          <img src={props.Logo} alt="Logo" />
+        </div>
       <h1>Hello, I am Syed Ammar</h1>
       <div className={Styles.tag}>
         Where imagination meets precision. Designs that leave a mark <br /> Turning ideas into stunning visuals
       </div>
       <div className={Styles.keys}>
         <Button text={"View My Work"}/>
-        <Button text={"Download Resume"}/>
+        <Button text={"Download CV"}/>
       </div>
+      <div className={Styles.triangle}>
+        <a href="#about">▼</a>
+      </div>
+        </div>
     </div>
   );
 };
