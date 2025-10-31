@@ -13,7 +13,7 @@ const Contact = () => {
 
         <div className={Styles.contactLinks}>
           <a
-            href="./assets/Syed Ammar-Resume.pdf"
+            href="/syed-ammar-resume.pdf"
             download
             className={Styles.btn}
           >

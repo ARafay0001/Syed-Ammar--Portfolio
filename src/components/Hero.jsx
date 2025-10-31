@@ -14,7 +14,7 @@ const Hero = (props) => {
       </div>
       <div className={Styles.keys}>
         <Button text={"View My Work"} href={"#gallery"}/>
-        <Button text={"Download CV"} download={true} href={"./assets/Syed Ammar-Resume.pdf"}/>
+        <Button text={"Download CV"} download={true} href={"/syed-ammar-resume.pdf"}/>
       </div>
       <div className={Styles.triangle}>
         <a href="#about">▼</a>
