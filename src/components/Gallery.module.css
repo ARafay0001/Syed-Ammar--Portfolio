@@ -1,0 +1,108 @@
+/* ===== Container ===== */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  padding: 60px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* ===== Heading ===== */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+/* ===== Gallery Grid ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* ===== Grid Items ===== */
+.gridItem {
+  position: relative;
+  border: 2px solid #000000;
+  overflow: hidden;
+  /* border-radius: 1px; */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gridItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.gridItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gridItem:hover img {
+  transform: scale(1.08);
+}
+
+/* ===== Overlay Effect ===== */
+.gridItem::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  /* border-radius: 16px; */
+}
+
+.gridItem:hover::after {
+  opacity: 1;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 4%;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+
+  .gallery {
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 3%;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr; /* Single column on small screens */
+    gap: 12px;
+  }
+
+  /* .gridItem {
+    border-radius: 12px;
+  } */
+}

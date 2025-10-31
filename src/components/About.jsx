@@ -3,9 +3,9 @@ import Styles from "./about.module.css";
 const About = (props) => {
   return (
     <div >
-      <div className={Styles.about}>
+      <div id="about" className={Styles.about}>
         <div className={Styles.text}>
-        <h1 id="about">About Me</h1>
+        <h1 >About Me</h1>
           I have over five years of experience in the media industry, with a
           strong background in DVC shoots, short films, music videos, and
           documentaries. My expertise also extends to freelance projects,
