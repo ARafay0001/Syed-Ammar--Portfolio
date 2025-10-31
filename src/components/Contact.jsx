@@ -4,7 +4,7 @@ import Styles from "./contact.module.css";
 const Contact = () => {
   return (
     <>
-      <section id="contact" className={Styles.contactSection}>
+      <section id="contact" data-aos="fade-up" className={Styles.contactSection}>
         <h2 className={Styles.sectionTitle}>Get in Touch</h2>
         <p className={Styles.description}>
           Whether you need a fresh design, photo editing, or creative

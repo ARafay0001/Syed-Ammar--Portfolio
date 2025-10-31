@@ -2,7 +2,7 @@ import React from "react";
 import Styles from "./about.module.css";
 const About = (props) => {
   return (
-    <div >
+    <div data-aos="fade-up" >
       <div id="about" className={Styles.about}>
         <div className={Styles.text}>
         <h1 >About Me</h1>

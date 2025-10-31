@@ -5,7 +5,7 @@ import cam from '../assets/camera.png';
 
 const Service = () => {
   return (
-    <div id='services' className={Styles.container}>
+    <div id='services' data-aos="fade-up" className={Styles.container}>
       <h1 >Services</h1>
       <div className={Styles.servicesBox}>
         <div className={Styles.card}>

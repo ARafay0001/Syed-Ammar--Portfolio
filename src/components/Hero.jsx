@@ -13,8 +13,8 @@ const Hero = (props) => {
         Where imagination meets precision. Designs that leave a mark <br /> Turning ideas into stunning visuals
       </div>
       <div className={Styles.keys}>
-        <Button text={"View My Work"}/>
-        <Button text={"Download CV"}/>
+        <Button text={"View My Work"} href={"#gallery"}/>
+        <Button text={"Download CV"} download={true} href={"./assets/Syed Ammar-Resume.pdf"}/>
       </div>
       <div className={Styles.triangle}>
         <a href="#about">▼</a>

@@ -13,7 +13,7 @@ const images = [img1, img2, img3, img4, img5, img6, img7, img8];
 const Gallery = () => {
   return (
     <>
-      <div id='gallery' className={Styles.container}>
+      <div id='gallery' data-aos="fade-up" className={Styles.container}>
         <h1>Gallery</h1>
       <section className={Styles.gallery}>
         {images.map((image, index) => (

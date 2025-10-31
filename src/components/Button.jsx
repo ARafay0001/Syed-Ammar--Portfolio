@@ -1,9 +1,10 @@
 import Styles from './Button.module.css'
 const Button = (props) => {
   return (
-    <div className={Styles.button}>
+    <a className={Styles.button}  href={props.href} download={props.download ? true : false}>
       {props.text}
-    </div>
+     
+    </a>
   )
 }
 

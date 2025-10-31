@@ -6,7 +6,7 @@ import illu from '../assets/illustrator.png'
 import canva from '../assets/canva.png'
 const Tools = () => {
   return (
-    <div className={Styles.toolsContainer}> 
+    <div data-aos="zoom-in" className={Styles.toolsContainer}> 
       <h1>Tools</h1>
       <div className={Styles.logoBox}>
         <div className={Styles.logo}>
